@@ -1,23 +1,32 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+
+# Ruby version
 ruby '2.5.1'
+# View a list of structured data (postgreSQL) in terminal
 gem 'table_print'
-gem 'faker'
-gem 'dotenv-rails', groups: [:development, :test]
+# Faker generates data at random
+gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
+# Stripe's payment platform
 gem 'stripe'
+# Active Storage
 gem "aws-sdk-s3", require: false
+# Devise is a flexible authentication solution
+gem 'devise'
+
+
 gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'rails_admin', github: 'sferik/rails_admin'
 gem 'rails_admin_rollincode', '~> 1.0'
 gem 'rails_admin_mydash'
+
+
 gem "rubyzip", ">= 1.3.0"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
-gem 'devise'
-gem 'letter_opener'
 gem 'will_paginate', '~> 3.1.1'
-gem 'will_paginate-bootstrap' 
+gem 'will_paginate-bootstrap'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
@@ -53,6 +62,9 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'dotenv'
+
+  # Shim to load environment variables from .env into ENV in development.
+  gem 'dotenv-rails'
 end
 
 group :development do
@@ -62,6 +74,9 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+
+  # Preview email in the default browser instead of sending it
+  gem 'letter_opener'
 end
 
 group :test do
