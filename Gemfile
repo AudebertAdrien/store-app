@@ -7,7 +7,7 @@ ruby '2.5.1'
 # View a list of structured data (postgreSQL) in terminal
 gem 'table_print'
 # Faker generates data at random
-gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
+gem 'faker'
 # Stripe's payment platform
 gem 'stripe'
 # Active Storage
