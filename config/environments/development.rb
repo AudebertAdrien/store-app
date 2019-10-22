@@ -8,7 +8,7 @@ Rails.application.configure do
   :password => ENV["SES_SMTP_PASSWORD"], #Your SMTP password
   :authentication => :login,
   :enable_starttls_auto => true
-  }
+}
 
   # Settings specified here will take precedence over those in config/application.rb.
 
