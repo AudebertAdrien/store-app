@@ -19,7 +19,7 @@ ActionMailer::Base.smtp_settings = {
 =end
 
 # SMTP AWS SES
-config.action_mailer.smtp_settings = {
+ActionMailer::Base.smtp_settings = {
   address: 'email-smtp.eu-west-1.amazonaws.com',
   port: 587,
   user_name: ENV['SES_SMTP_USERNAME'], # Your SMTP user
