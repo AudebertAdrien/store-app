@@ -77,6 +77,10 @@ group :development do
 
   # Preview email in the default browser instead of sending it
   gem 'letter_opener'
+
+  #Better Errors replaces the standard Rails error page
+  gem "better_errors"
+  gem "binding_of_caller"
 end
 
 group :test do
