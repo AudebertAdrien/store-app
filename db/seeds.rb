@@ -17,6 +17,11 @@ JoinTableCategoryItem.delete_all
 
 puts 'Delete done!'
 
+# Admin Create
+
+User.create(first_name: 'Admin', last_name: 'Response', email: 'okami987@yopmail.com', password: 'okami987', admin: true)
+@user = User.last
+@user.avatar.attach(io: File.open('app/assets/images/avatar.jpg'), filename: 'avatar.jpg', content_type: 'image/jpg')
 
 # Categories Shoes
 
