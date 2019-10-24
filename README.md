@@ -4,10 +4,9 @@ https://cloth-up.herokuapp.com/
 This project was realised for the Final project of our formation [The hacking project](https://www.thehackingproject.org/fr) in two weeks
 
 ### Team
-- Audebert Adrien
+- Audebert Adrien !
 - Gaspard Tertrais
 - Béatrice charrier
-
 
 Because AWS SES is on sandbox mode, only two accounts are possible.
 - To access at User account profil:
