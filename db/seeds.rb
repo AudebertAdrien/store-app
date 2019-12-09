@@ -19,13 +19,13 @@ puts 'Delete done!'
 
 # Users Create
 
-User.create(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, email: "okami987@yopmail.com", date_of_birth: Faker::Date.birthday(min_age: 18, max_age: 65), city: Faker::Address.city, zip_code: Faker::Address.zip_code, address: Faker::Address.street_address, password: 'okami987', admin: false)
+User.create(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, email: "test666@yopmail.com", date_of_birth: Faker::Date.birthday(min_age: 18, max_age: 65), city: Faker::Address.city, zip_code: Faker::Address.zip_code, address: Faker::Address.street_address, password: 'test666', admin: false)
 @user = User.last
 @user.avatar.attach(io: File.open('app/assets/images/avatar.jpg'), filename: 'avatar.jpg', content_type: 'image/jpg')
 
 # Admin Create
 
-User.create(first_name: 'Admin', last_name: 'Response', email: 'admin987@yopmail.com', password: 'admin987', admin: true)
+User.create(first_name: 'Admin', last_name: 'Response', email: 'admin999@yopmail.com', password: 'admin999', admin: true)
 @user = User.last
 @user.avatar.attach(io: File.open('app/assets/images/avatar.jpg'), filename: 'avatar.jpg', content_type: 'image/jpg')
 
