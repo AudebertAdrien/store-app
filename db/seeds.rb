@@ -24,11 +24,11 @@ User.create(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name
 @user.avatar.attach(io: File.open('app/assets/images/avatar.jpg'), filename: 'avatar.jpg', content_type: 'image/jpg')
 
 # Admin Create
-
+=begin
 User.create(first_name: 'Admin', last_name: 'Response', email: 'admin987@yopmail.com', password: 'admin654', admin: true)
 @user = User.last
 @user.avatar.attach(io: File.open('app/assets/images/avatar.jpg'), filename: 'avatar.jpg', content_type: 'image/jpg')
-
+=end
 # Categories Shoes
 
 Category.create(name: 'Shoes')
