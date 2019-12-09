@@ -8,14 +8,7 @@ This project was realised for the Final project of our formation [The hacking pr
 - Gaspard Tertrais
 - Béatrice charrier
 
-Because AWS SES is on sandbox mode, only two accounts are possible.
-- To access at User account profil:
-   email: okami987@yopmail.com
-   pass: okami987
 
-- To access at Admin profil :
-   emial: admin987@yopmail.com
-   pass: admin987
 
 - Stripe is on test mode
 
