@@ -1,5 +1,4 @@
-### Production link
-https://cloth-up.herokuapp.com/
+### Cloth-up
 
 This project was realised for the Final project of our formation [The hacking project](https://www.thehackingproject.org/fr) in two weeks
 
@@ -7,8 +6,6 @@ This project was realised for the Final project of our formation [The hacking pr
 - Audebert Adrien
 - Gaspard Tertrais
 - Béatrice charrier
-
-
 
 - Stripe is on test mode
 
