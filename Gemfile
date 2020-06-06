@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 
 # Ruby version
-ruby '2.5.1'
+ruby '2.7.1'
 # View a list of structured data (postgreSQL) in terminal
 gem 'table_print'
 # Faker generates data at random
@@ -15,6 +15,12 @@ gem "aws-sdk-s3", require: false
 # Devise is a flexible authentication solution
 gem 'devise'
 
+#update security
+gem "actionview", ">= 5.2.4.2"
+gem "activesupport", ">= 5.2.4.3"
+gem "actionpack", ">= 5.2.4.3"
+gem "activestorage", ">= 5.2.4.3" 
+gem "actionview", ">= 5.2.4.2"
 
 gem 'rails_admin', github: 'sferik/rails_admin'
 gem 'rails_admin_rollincode', '~> 1.0'
