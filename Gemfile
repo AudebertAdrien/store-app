@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 
 # Ruby version
-ruby '2.7.1'
+ruby '2.5.1'
 # View a list of structured data (postgreSQL) in terminal
 gem 'table_print'
 # Faker generates data at random
@@ -20,7 +20,6 @@ gem "actionview", ">= 5.2.4.2"
 gem "activesupport", ">= 5.2.4.3"
 gem "actionpack", ">= 5.2.4.3"
 gem "activestorage", ">= 5.2.4.3" 
-gem "actionview", ">= 5.2.4.2"
 
 gem 'rails_admin', github: 'sferik/rails_admin'
 gem 'rails_admin_rollincode', '~> 1.0'
@@ -97,4 +96,4 @@ group :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+#gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
