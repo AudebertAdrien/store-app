@@ -2,14 +2,15 @@
 
 This project was realised for the Final project of our formation [The hacking project](https://www.thehackingproject.org/fr) in two weeks
 
+> Production but no active storage
+https://dashboard.heroku.com/apps/cloth-up
+
 ### Team
 - Audebert Adrien
 - Gaspard Tertrais
 - Béatrice charrier
 
 - Stripe is on test mode
-
-YOPmail's is a free temporary email adresse
 
 #### v1.0
 - Home Page with products
